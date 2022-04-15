@@ -2,36 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css" class="css">
+  <title>Frontend Mentor</title>
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <div class="container_1">
+    <div class="hero">
+      <img id="img_hero" src="images/illustration-hero.svg" alt="background_desktop">
+    </div>
+    <br>
+    <h1 class="title">
+      Order Summary
+    </h1>
+    <br>
+    <p class="subtitle">
+      You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!
+    </p><br>
+    <div class="container_2">
+      <div id="img_music">
+        <img src="images/icon-music.svg" class="img-fluid rounded-circle" alt="">
+        <div id="music_right" style="float: right;">
+          <p style="color:black">Annual Plan</p>
+          <p>$59.99/year</p>
+        </div>
+      </div>
+      <div id="change_btn">
+        <a style="color: hsl(245, 75%, 52%);" href="#">Change</a>
+      </div>
+    </div><br>
+    <button class="payment_btn">
+      <a style="color: white;" href="#">Proceed to Payment</a>
+    </button>
+    <button class="cancel_btn">
+      <a style="color: grey;" href="#">Cancel Order</a>
+    </button>
+  </div> 
+  <br>
+  <footer style="font-family: 'Times New Roman', Times, serif;" class="footer">
+    <p>Challenge by <a href="#" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/ayşe-varlık-a348341b7/">Ayşe Varlık</a>.</p>
+  </footer>  
 </body>
 </html>
